@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1404.13">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Courier; -webkit-text-stroke: #000000; min-height: 16.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">/*</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>* Globals</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>*/</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">/* Links */</span></p>
+<p class="p1"><span class="s1">a,</span></p>
+<p class="p1"><span class="s1">a:focus,</span></p>
+<p class="p1"><span class="s1">a:hover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: #fff;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">/* Custom default button */</span></p>
+<p class="p1"><span class="s1">.btn-default,</span></p>
+<p class="p1"><span class="s1">.btn-default:hover,</span></p>
+<p class="p1"><span class="s1">.btn-default:focus {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: #333;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-shadow: none; /* Prevent inheritence from `body` */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background-color: #fff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border: 1px solid #fff;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">/*</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>* Base structure</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>*/</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">html,</span></p>
+<p class="p1"><span class="s1">body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>height: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background-color: #333;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: #fff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>text-shadow: 0 1px 3px rgba(0,0,0,.5);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">/* Extra markup and styles for table-esque vertical and horizontal centering */</span></p>
+<p class="p1"><span class="s1">.site-wrapper {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display: table;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>height: 100%; /* For at least Firefox */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>min-height: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">          </span>box-shadow: inset 0 0 100px rgba(0,0,0,.5);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.site-wrapper-inner {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display: table-cell;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>vertical-align: top;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.cover-container {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-right: auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-left: auto;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">/* Padding for spacing */</span></p>
+<p class="p1"><span class="s1">.inner {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding: 30px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">/*</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>* Header</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>*/</span></p>
+<p class="p1"><span class="s1">.masthead-brand {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-top: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-bottom: 10px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.masthead-nav &gt; li {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>display: inline-block;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.masthead-nav &gt; li + li {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-left: 20px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.masthead-nav &gt; li &gt; a {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding-right: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding-left: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-size: 16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-weight: bold;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: #fff; /* IE8 proofing */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: rgba(255,255,255,.75);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-bottom: 2px solid transparent;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.masthead-nav &gt; li &gt; a:hover,</span></p>
+<p class="p1"><span class="s1">.masthead-nav &gt; li &gt; a:focus {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background-color: transparent;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-bottom-color: #a9a9a9;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-bottom-color: rgba(255,255,255,.25);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.masthead-nav &gt; .active &gt; a,</span></p>
+<p class="p1"><span class="s1">.masthead-nav &gt; .active &gt; a:hover,</span></p>
+<p class="p1"><span class="s1">.masthead-nav &gt; .active &gt; a:focus {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: #fff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-bottom-color: #fff;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">@media (min-width: 768px) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.masthead-brand {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>float: left;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.masthead-nav {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>float: right;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">/*</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>* Cover</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>*/</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.cover {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding: 0 20px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.cover .btn-lg {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding: 10px 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-weight: bold;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">/*</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>* Footer</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>*/</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">.mastfoot {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: #999; /* IE8 proofing */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>color: rgba(255,255,255,.5);</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">/*</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>* Affix and center</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space"> </span>*/</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">@media (min-width: 768px) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* Pull out the header and footer */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.masthead {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>position: fixed;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>top: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.mastfoot {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>position: fixed;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>bottom: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* Start the vertical centering */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.site-wrapper-inner {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>vertical-align: middle;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>/* Handle the widths */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.masthead,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.mastfoot,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.cover-container {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>width: 100%; /* Must be percentage or pixels for horizontal alignment */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">@media (min-width: 992px) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.masthead,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.mastfoot,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>.cover-container {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>width: 700px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>}</span></p>
+<p class="p1"><span class="s1">}</span></p>
+</body>
+</html>
